@@ -24,6 +24,7 @@
                 <form action="decrypt.html">
                     <button>Decrypt</button>
                 </form>
+
             </header>
 
             <h2>ENCRYPT YOUR TEXT</h2>
@@ -31,8 +32,11 @@
             <section>
                 <div>
 
-                    <input id="value" placeholder="type / paste your text here">
+                    <!-- <input id="value" placeholder="type / paste your text here"> -->
+                    <label for="textInput">Lowercase text only.</label>
 
+                    <input class="text-input" type="text" name="textInput" id="textInput"
+                        placeholder="type / paste your text here">
 
                 </div>
             </section>
@@ -40,7 +44,7 @@
             <hr>
 
             <section>
-                <button id="encrypt">ENCRYPT</button>
+                <input class="btn" type="submit" value="encrypt" id="btn-crypt">
             </section>
         </form>
     </main>

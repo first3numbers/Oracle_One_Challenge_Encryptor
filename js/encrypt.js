@@ -1,13 +1,11 @@
 function getValue() {
-
-    var value = document.querySelector("input").value;
-    console.log(value)
+    var originalText = document.getElementById("textInput").value;
+    var swapWords = originalText.replace(/e/g, "enter").replace(/i/g, "imes")
+    encryptedText = swapWords;
+    console.log(encryptedText)
 
 }
 
-function encrypt() {
-    let
-}
 
-var button = document.getElementById("encrypt")
+var button = document.getElementById("btn-crypt")
 button.onclick = getValue;
