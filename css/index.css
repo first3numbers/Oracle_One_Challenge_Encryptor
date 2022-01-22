@@ -1,0 +1,82 @@
+* {
+        margin: 0;
+        padding: 0;
+        border: 0;
+        outline: 0;
+        font-size: 100%;
+        vertical-align: baseline;
+        background: transparent;
+    }
+
+body {
+  background-color: #072227;
+  font-family: consolas;
+  color:#AEFEFF;
+}
+
+
+.title {
+  padding: 15px;
+  width: 50vw;
+  margin: auto;
+  text-align: center;
+  font-size: 150%;
+
+}
+
+.landing-page-text {
+  text-align: center;
+  padding:30px
+}
+
+.instruction {
+ margin: auto;
+  text-align: center;
+  font-size: 150%;
+}
+
+.option-buttons{
+   text-align: center;
+  top: 50%;
+  left: 50%;
+}
+
+.encrypt-button {
+  border: 0;
+  color: #AEFEFF;
+  font-weight: bold;
+  background-color: #4FBDBA;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+}
+
+.decrypt-button {
+  border: 0;
+  color: #AEFEFF;
+  font-weight: bold;
+  background-color: #4FBDBA;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 0.5em;
+}
+
+.warning {
+ margin: auto;
+  text-align: center;
+}
+
+.footer {
+ margin: auto;
+  text-align: center;
+}
+
+.text-input {
+  border-radius: 0.5em;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  display: block;
+  padding: 0.5em;
+  width: 100%;
+  height: 50px;
+}
+

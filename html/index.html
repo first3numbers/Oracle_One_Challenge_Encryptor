@@ -5,49 +5,65 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/css.css">
+    <link rel="stylesheet" href="../css/index.css">
     <title>Text Encryptor / Decryptor</title>
 </head>
 
 <body>
 
-    <header>
-        <h1>MARCELO'S TEXT ENCRYPTOR / DECRYPTOR</h1>
+    <header class="title">
+        <h1>NULL'S TEXT ENCRYPTOR / DECRYPTOR</h1>
+        <h2>Welcome to my text encryptor / decryptor!</h2>
     </header>
 
-    <hr>
     <main>
-        <h2>Welcome to my text encryptor / decryptor!</h2>
 
-        <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quis assumenda impedit cumque, voluptatibus
-            deleniti architecto ea. Aliquid, dolorem. Minima, dicta. Harum deserunt officiis labore quaerat, distinctio
-            earum enim minus...
-            Suscipit harum perspiciatis nulla soluta, odio sit impedit nostrum, consectetur quos accusantium voluptas.
-            Laudantium placeat atque vitae modi quas magnam excepturi ab et consectetur, dolorum error sint doloribus,
-            libero asperiores!
-        </p>
+        <div class="landing-page-text">
+            <p>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eius quis assumenda impedit cumque,
+                voluptatibus
+                deleniti architecto ea. Aliquid, dolorem. Minima, dicta. Harum deserunt officiis labore quaerat,
+                distinctio
+                earum enim minus...
+                Suscipit harum perspiciatis nulla soluta, odio sit impedit nostrum, consectetur quos accusantium
+                voluptas.
+                Laudantium placeat atque vitae modi quas magnam excepturi ab et consectetur, dolorum error sint
+                doloribus,
+                libero asperiores!
+            </p>
 
-        <h2>Select an option:</h2>
+        </div>
 
-        <form action="encrypt.html">
-            <button>Encrypt</button>
-        </form>
+        <div class="instruction">
+            <h2>Select an option:</h2>
+        </div>
 
-        <form action="decrypt.html">
-            <button>Decrypt</button>
-        </form>
+        <div class="option-buttons">
 
-        <p>
-            Attention: you can only decrypt text that was previously encrypted using this tool
-        </p>
+            <form action="encrypt.html">
+                <button class="encrypt-button">Encrypt</button>
+            </form>
 
+            <form action="decrypt.html">
+                <button class="decrypt-button">Decrypt</button>
+            </form>
+        </div>
 
-        <footer>
+        <div class="warning">
+            <p>
+                Attention: you can only decrypt text that was previously encrypted using this tool
+            </p>
+        </div>
 
-        </footer>
     </main>
 
+    <footer>
+        <div class="footer">
+            Created by @first3numbers
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="../js/index.js"></script>
 
 </body>
 
