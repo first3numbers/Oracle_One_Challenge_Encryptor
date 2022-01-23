@@ -5,32 +5,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="encrypt.js" type="text/Javascript">
+    <link rel="stylesheet" href="../css/encrypt.css">
     <title>Document</title>
 </head>
 
 <body>
 
-    <main>
-        <form action="">
 
-            <!-- header of page with links to other sections of site -->
 
-            <header>
-                <form action="index.html">
-                    <button>Index</button>
-                </form>
+    <!-- header of page with links to other sections of site -->
 
-                <form action="decrypt.html">
-                    <button>Decrypt</button>
-                </form>
+    <header class="header">
+        <form action="index.html">
+            <button>Index</button>
+        </form>
 
-            </header>
+        <form action="decrypt.html">
+            <button>Decrypt</button>
+        </form>
 
-            <h2>ENCRYPT YOUR TEXT</h2>
+    </header>
 
-            <section>
-                <div>
+    <div class="title">
+        <h1>ENCRYPT YOUR TEXT</h1>
+    </div>
+
+    <main class="main">
+        <form>
+            <section class="text-input">
+                <div class="encrypt-input">
 
                     <!-- <input id="value" placeholder="type / paste your text here"> -->
                     <label for="textInput">Lowercase text only.</label>
@@ -40,23 +43,36 @@
 
                 </div>
 
-                <div>
+                <div class="encrypt-output">
 
                     <input type="text-input" id="encryptOutput" readonly="readonly">
 
                 </div>
             </section>
 
-            <hr>
+            <section class="buttons">
 
-            <section>
-                <input class="btn" type="submit" value="Encrypt" id="btnCrypt">
-                <input class="btn" type="submit" value="Copy text do clipboard" id="copyText">
+                <div class="encrypt-button">
+                    <input class="btn" type="submit" value="Encrypt" id="btnCrypt">
+                </div>
+
+                <div class="clipboard-button">
+                    <input class="btn" type="submit" value="Copy text do clipboard" id="copyText">
+                </div>
+
             </section>
+
         </form>
     </main>
 
     <script type="text/javascript" src="../js/encrypt.js"></script>
+
+    <footer>
+        <div class="footer">
+            Created by @first3numbers for Oracle ONE
+        </div>
+    </footer>
+
 </body>
 
 </html>
