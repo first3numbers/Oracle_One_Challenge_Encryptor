@@ -5,44 +5,95 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/decrypt.css">
+
+
     <title>Document</title>
 </head>
 
 <body>
 
-    <main>
-        <form action="">
 
-            <header>
-                <form action="landingpage.html">
-                    <button>Index</button>
+
+    <!-- header of page with links to other sections of site -->
+
+    <header class="header">
+
+        <div class="title-header">
+            <h1>TEXT DECRYPTOR</h1>
+        </div>
+
+        <div class="header-buttons">
+            <form action="index.html">
+                <button class="go-to-index">Index</button>
+            </form>
+
+            <form action="encrypt.html">
+                <button class="go-to-encrypt">Encrypt</button>
+            </form>
+        </div>
+
+    </header>
+
+    <div class="title">
+        <h1>DECRYPT YOUR TEXT</h1>
+    </div>
+
+
+    <main class="main">
+        <div class="subtitle">
+            <h2>Attention: you can only decrypt text that was previously encrypted using this tool</h2>
+        </div>
+
+        <section class="text-input">
+            <div class="decrypt-input">
+
+                <!-- <input id="value" placeholder="type / paste your text here"> -->
+
+                <!-- class="text-input" type="text" name="textInput" id="textInput"
+                placeholder="type / paste your text here" -->
+                <form method="get" id="text-input">
+                </form>
+                <textarea form="text-input" name="textInput" id="textInput" rows="15" cols="45" wrap="soft"
+                    placeholder="type / paste your text here" style="resize: none"></textarea>
+
+            </div>
+
+
+            <div class="decrypt-output">
+
+                <form method="get" id="text-output">
                 </form>
 
-                <form action="encrypt.html">
-                    <button>Encrypt</button>
-                </form>
-            </header>
+                <textarea form="text-output" name="decryptOutput" id="decryptOutput" rows="15" cols="45" wrap="soft"
+                    readonly="readonly" style="resize: none"></textarea>
 
-            <h2>DECRYPT YOUR TEXT</h2>
+                <!-- <input rows="10" cols="50" type="text-input" id="encryptOutput" readonly="readonly"> -->
 
-            <section>
-                <div>
+            </div>
+        </section>
 
-                    <textarea required rows="20" cols="100" name="text"
-                        placeholder="type / paste your text here"></textarea>
+        <section class="buttons">
 
+            <div>
+                <input class="decrypt-button" type="submit" value="Decrypt" id="btnDecrypt">
+            </div>
 
-                </div>
-            </section>
+            <div>
+                <input class="clipboard-button" type="submit" value="Copy text do clipboard" id="copyText">
+            </div>
 
-            <hr>
-
-            <section>
-                <button>DECRYPT</button>
-            </section>
-        </form>
-
+        </section>
     </main>
+
+    <script type="text/javascript" src="../js/decrypt.js"></script>
+
+    <footer>
+        <div class="footer">
+            Created by @first3numbers for Oracle ONE
+        </div>
+    </footer>
+
 </body>
 
 </html>

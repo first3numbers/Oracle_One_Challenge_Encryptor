@@ -6,6 +6,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/encrypt.css">
+
+
     <title>Document</title>
 </head>
 
@@ -16,13 +18,20 @@
     <!-- header of page with links to other sections of site -->
 
     <header class="header">
-        <form action="index.html">
-            <button>Index</button>
-        </form>
 
-        <form action="decrypt.html">
-            <button>Decrypt</button>
-        </form>
+        <div class="title-header">
+            <h1>TEXT ENCRYPTOR</h1>
+        </div>
+
+        <div class="header-buttons">
+            <form action="index.html">
+                <button class="go-to-index">Index</button>
+            </form>
+
+            <form action="decrypt.html">
+                <button class="go-to-decrypt">Decrypt</button>
+            </form>
+        </div>
 
     </header>
 
@@ -30,39 +39,51 @@
         <h1>ENCRYPT YOUR TEXT</h1>
     </div>
 
+
     <main class="main">
-        <form>
-            <section class="text-input">
-                <div class="encrypt-input">
+        <div class="subtitle">
+            <h2>Lowercase text only, no uppercase characters.</h2>
+        </div>
 
-                    <!-- <input id="value" placeholder="type / paste your text here"> -->
-                    <label for="textInput">Lowercase text only.</label>
-                    <p></p>
-                    <input class="text-input" type="text" name="textInput" id="textInput"
-                        placeholder="type / paste your text here">
+        <section class="text-input">
+            <div class="encrypt-input">
 
-                </div>
+                <!-- <input id="value" placeholder="type / paste your text here"> -->
 
-                <div class="encrypt-output">
+                <!-- class="text-input" type="text" name="textInput" id="textInput"
+                placeholder="type / paste your text here" -->
+                <form method="get" id="text-input">
+                </form>
+                <textarea form="text-input" name="textInput" id="textInput" rows="15" cols="45" wrap="soft"
+                    placeholder="type / paste your text here" style="resize: none"></textarea>
 
-                    <input type="text-input" id="encryptOutput" readonly="readonly">
+            </div>
 
-                </div>
-            </section>
 
-            <section class="buttons">
+            <div class="encrypt-output">
 
-                <div class="encrypt-button">
-                    <input class="btn" type="submit" value="Encrypt" id="btnCrypt">
-                </div>
+                <form method="get" id="text-output">
+                </form>
 
-                <div class="clipboard-button">
-                    <input class="btn" type="submit" value="Copy text do clipboard" id="copyText">
-                </div>
+                <textarea form="text-output" name="encryptOutput" id="encryptOutput" rows="15" cols="45" wrap="soft"
+                    readonly="readonly" style="resize: none"></textarea>
 
-            </section>
+                <!-- <input rows="10" cols="50" type="text-input" id="encryptOutput" readonly="readonly"> -->
 
-        </form>
+            </div>
+        </section>
+
+        <section class="buttons">
+
+            <div>
+                <input class="encrypt-button" type="submit" value="Encrypt" id="btnCrypt">
+            </div>
+
+            <div>
+                <input class="clipboard-button" type="submit" value="Copy text do clipboard" id="copyText">
+            </div>
+
+        </section>
     </main>
 
     <script type="text/javascript" src="../js/encrypt.js"></script>

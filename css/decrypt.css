@@ -49,7 +49,7 @@ body {
 }
 
 
-.go-to-decrypt {
+.go-to-encrypt {
   border: 3px solid #AEFEFF;
   color: #AEFEFF;
   font-weight: bold;
@@ -108,7 +108,7 @@ body {
   display: flex;
 }
 
-.encrypt-input {
+.decrypt-input {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -122,7 +122,7 @@ body {
   font-size:12pt;
 }
 
-.encrypt-output {
+.decrypt-output {
   display: grid;
   justify-content: center;
   align-items: center;
@@ -148,7 +148,7 @@ body {
   left: 50%;
 }
 
-.encrypt-button {
+.decrypt-button {
   border: 3px solid #AEFEFF;
   color: #AEFEFF;
   font-weight: bold;
