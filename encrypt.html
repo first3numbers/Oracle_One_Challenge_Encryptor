@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/decrypt.css">
+    <link rel="stylesheet" href="css/encrypt.css">
 
 
     <title>Document</title>
@@ -20,7 +20,7 @@
     <header class="header">
 
         <div class="title-header">
-            <h1>TEXT DECRYPTOR</h1>
+            <h1>TEXT ENCRYPTOR</h1>
         </div>
 
         <div class="header-buttons">
@@ -28,25 +28,25 @@
                 <button class="go-to-index"><img class="header-icon" src="icons/home.png">Index</button>
             </form>
 
-            <form action="encrypt.html">
-                <button class="go-to-encrypt"><img class="header-icon" src="icons/encrypt.png">Encrypt</button>
+            <form action="decrypt.html">
+                <button class="go-to-decrypt"><img class="header-icon" src="icons/decrypt.png">Decrypt</button>
             </form>
         </div>
 
     </header>
 
     <div class="title">
-        <h1>DECRYPT YOUR TEXT</h1>
+        <h1>ENCRYPT YOUR TEXT</h1>
     </div>
 
 
     <main class="main">
         <div class="subtitle">
-            <h2>Attention: you can only decrypt text that was previously encrypted using this tool</h2>
+            <h2>Lowercase text only, no uppercase characters.</h2>
         </div>
 
         <section class="text-input">
-            <div class="decrypt-input">
+            <div class="encrypt-input">
 
                 <!-- <input id="value" placeholder="type / paste your text here"> -->
 
@@ -60,12 +60,12 @@
             </div>
 
 
-            <div class="decrypt-output">
+            <div class="encrypt-output">
 
                 <form method="get" id="text-output">
                 </form>
 
-                <textarea form="text-output" name="decryptOutput" id="decryptOutput" rows="15" cols="45" wrap="soft"
+                <textarea form="text-output" name="encryptOutput" id="encryptOutput" rows="15" cols="45" wrap="soft"
                     readonly="readonly" style="resize: none"></textarea>
 
                 <!-- <input rows="10" cols="50" type="text-input" id="encryptOutput" readonly="readonly"> -->
@@ -76,7 +76,7 @@
         <section class="buttons">
 
             <div>
-                <input class="decrypt-button" type="submit" value="Decrypt" id="btnDecrypt">
+                <input class="encrypt-button" type="submit" value="Encrypt" id="btnCrypt">
             </div>
 
             <div>
@@ -85,8 +85,6 @@
 
         </section>
     </main>
-
-    <script type="text/javascript" src="../js/decrypt.js"></script>
 
     <footer>
         <div class="footer">
@@ -98,6 +96,8 @@
             <a href="https://github.com/first3numbers"> <img class="footer-icon" src="icons/github.png"></a>
         </div>
     </footer>
+
+    <script type="text/javascript" src="js/encrypt.js"></script>
 
 </body>
 
