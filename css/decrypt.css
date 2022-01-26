@@ -115,6 +115,8 @@ body {
 
 .text-input{
   display: flex;
+    justify-content: center;
+  align-items: center;
 }
 
 .decrypt-input {
@@ -127,7 +129,7 @@ body {
   background-color: #ffffff;
   display: block;
   padding: 0.5em;
-  width:400px;
+  width:300px;
   font-size:12pt;
 }
 
@@ -142,7 +144,7 @@ body {
   background-color: #ffffff;
   display: block;
   padding: 0.5em;
-  width:400px;
+  width:300px;
   font-size:12pt;
 }
 
